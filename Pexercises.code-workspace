@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "exercises"
+		}
+	],
+	"settings": {},
+	"runOnSave.commands": [
+		{
+			"match": ".*",
+			"cmd": "task Auto Git Push"
+		}
+	]
+}
