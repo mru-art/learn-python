@@ -48,4 +48,19 @@ lindex = len(fruits) - 1
 fruits[lindex] = "grape"
 print(fruits)  # Output: ['kiwi', 'mango', 'banana', 'grape']
 
-#
+does_exist = "banana" in fruits
+print(does_exist)  # Output: True
+
+fruits.append("pear")
+print(fruits)  # Output: ['kiwi', 'mango', 'banana', 'grape', 'pear']
+
+fruits.insert(2, "guava")
+print(fruits)  # Output: ['kiwi', 'mango', 'guava', 'banana', 'grape', 'pear']
+
+fruits.remove("banana")
+print(fruits)  # Output: ['kiwi', 'mango', 'guava
+
+fruits.pop(3)
+print(fruits)  # Output: ['kiwi', 'mango', 'guava', 'pear']
+fruits.pop()
+print(fruits)  # Output: ['kiwi', 'mango', 'guava']
