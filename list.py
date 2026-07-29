@@ -12,7 +12,7 @@ sl_fruit = fruits[-2]
 print(sl_fruit)  # Output: date
 
 # unpacking the list items
-countries = ["Lithuania", "Latvia", "Estonia", "Norway", "Finland", "Sweden"]
+countries = ["Lithuania", "Latvia", "Estonia", "Norway", "Finland", "Sweden", "Denmark"]
 li, la, es, *rest = countries
 print(li)  # Output: Lithuania
 print(la)  # Output: Latvia
