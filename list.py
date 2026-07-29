@@ -64,3 +64,38 @@ fruits.pop(3)
 print(fruits)  # Output: ['kiwi', 'mango', 'guava', 'pear']
 fruits.pop()
 print(fruits)  # Output: ['kiwi', 'mango', 'guava']
+
+del fruits[1]
+print(fruits)  # Output: ['kiwi', 'guava']
+fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
+del fruits[0:2]
+print(fruits)  # Output: ['guava', 'pear', 'grape', 'banana']
+
+fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
+fruits.clear()
+print(fruits)  # Output: []
+
+fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
+fruitcopy = fruits.copy()
+print(fruitcopy)  # Output: ['kiwi', 'mango', 'guava', 'pear', 'grape', 'banana']
+
+pnos = [1, 2, 3, 4, 5]
+nnos = [-6, -7, -8, -9, -10]
+nos = pnos + nnos
+print(nos)  # Output: [1, 2, 3, 4, 5, -6, -7, -8, -9, -10]
+
+pnos.extend(nnos)
+print(pnos)  # Output: [1, 2, 3, 4, 5, -6, -7, -8, -9, -10]
+
+fruits.count("kiwi")
+print(fruits.count("kiwi"))  # Output: 1
+age = [20, 21, 22, 22, 24, 25]
+print(age.count(22))  # Output: 2
+age.index(24)
+print(age.index(24))  # Output: 4
+
+fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
+fruits.reverse()
+print(fruits)  # Output: ['banana', 'grape', 'pear', 'guava', 'mango', 'kiwi']
+fruits.sort()
+print(fruits)  # Output: ['banana', 'grape', 'guava', 'kiwi', 'mango', 'pear']
