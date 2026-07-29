@@ -19,6 +19,7 @@ print(la)  # Output: Latvia
 print(es)  # Output: Estonia
 print(rest)  # Output: ['Norway', 'Finland', 'Sweden']
 
+# slicing the list
 fruits = ["orange", "cherry", "banana", "apple"]
 allfruits = fruits[0:4]
 print(allfruits)  # Output: ['orange', 'cherry', 'banana', 'apple']
@@ -36,3 +37,15 @@ cba = fruits[-3:]
 print(cba)  # Output: ['cherry', 'banana', 'apple']
 reverse = fruits[::-1]
 print(reverse)  # Output: ['apple', 'banana', 'cherry', 'orange']
+
+# modifying the list
+fruits = ["orange", "cherry", "banana", "apple"]
+fruits[0] = "kiwi"
+print(fruits)  # Output: ['kiwi', 'cherry', 'banana', 'apple']
+fruits[1] = "mango"
+print(fruits)  # Output: ['kiwi', 'mango', 'banana', 'apple']
+lindex = len(fruits) - 1
+fruits[lindex] = "grape"
+print(fruits)  # Output: ['kiwi', 'mango', 'banana', 'grape']
+
+#
