@@ -93,7 +93,6 @@ age = [20, 21, 22, 22, 24, 25]
 print(age.count(22))  # Output: 2
 age.index(24)
 print(age.index(24))  # Output: 4
-
 fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
 fruits.reverse()
 print(fruits)  # Output: ['banana', 'grape', 'pear', 'guava', 'mango', 'kiwi']
