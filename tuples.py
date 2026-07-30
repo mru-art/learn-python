@@ -47,7 +47,7 @@ fruits[0] = "apple"
 fruits = tuple(fruits)
 print(fruits)  # Output: ('apple', 'cherry', 'banana', 'pear')
 
-# joining tuple
+# joining tuple using +
 fruits = ("lime", "cherry", "banana", "pear")
 vegetables = ("carrot", "broccoli", "spinach", "cabbage")
 fruits_and_vegetables = fruits + vegetables
