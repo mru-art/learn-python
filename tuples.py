@@ -53,11 +53,11 @@ vegetables = ("carrot", "broccoli", "spinach", "cabbage")
 fruits_and_vegetables = fruits + vegetables
 print(
     fruits_and_vegetables
-)  # Output: ('lime', 'cherry', 'banana', 'pear', 'carrot', 'broccoli', 'spinach', 'cabbage')
+)  # Output: ('lime', 'cherry', 'banana', 'pear', 'carrot', 'broccoli', 'spinach')
 
 # deleting tuple
 del fruits
 del vegetables
 del fruits_and_vegetables
-print(fruits)  # Output: NameError: name 'fruits' is not defined
-print(vegetables)  # Output: NameError: name 'vegetables' is not defined
+# print(fruits)  # Output: NameError: name 'fruits' is not defined
+# print(vegetables)  # Output: NameError: name 'vegetables' is not defined

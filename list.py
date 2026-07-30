@@ -12,7 +12,7 @@ sl_fruit = fruits[-2]
 print(sl_fruit)  # Output: date
 
 # unpacking the list items
-countries = ["Lithuania", "Latvia", "Estonia", "Norway", "Finland", "Sweden"]
+countries = ["Lithuania", "Latvia", "Estonia", "Norway", "Finland", "Sweden", "Denmark"]
 li, la, es, *rest = countries
 print(li)  # Output: Lithuania
 print(la)  # Output: Latvia
@@ -48,53 +48,73 @@ lindex = len(fruits) - 1
 fruits[lindex] = "grape"
 print(fruits)  # Output: ['kiwi', 'mango', 'banana', 'grape']
 
+# does exist
 does_exist = "banana" in fruits
 print(does_exist)  # Output: True
 
+# joins using append
 fruits.append("pear")
 print(fruits)  # Output: ['kiwi', 'mango', 'banana', 'grape', 'pear']
 
+# inserts at a specific index
 fruits.insert(2, "guava")
 print(fruits)  # Output: ['kiwi', 'mango', 'guava', 'banana', 'grape', 'pear']
 
+# remove
 fruits.remove("banana")
 print(fruits)  # Output: ['kiwi', 'mango', 'guava
 
+# pop
 fruits.pop(3)
 print(fruits)  # Output: ['kiwi', 'mango', 'guava', 'pear']
 fruits.pop()
 print(fruits)  # Output: ['kiwi', 'mango', 'guava']
 
+# deletes a specific index
 del fruits[1]
 print(fruits)  # Output: ['kiwi', 'guava']
 fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
 del fruits[0:2]
 print(fruits)  # Output: ['guava', 'pear', 'grape', 'banana']
 
+# clears the list using teh built in function
 fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
 fruits.clear()
 print(fruits)  # Output: []
 
+# copy a string using a built in function
 fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
 fruitcopy = fruits.copy()
 print(fruitcopy)  # Output: ['kiwi', 'mango', 'guava', 'pear', 'grape', 'banana']
 
+# join using +
 pnos = [1, 2, 3, 4, 5]
 nnos = [-6, -7, -8, -9, -10]
 nos = pnos + nnos
 print(nos)  # Output: [1, 2, 3, 4, 5, -6, -7, -8, -9, -10]
 
+# extend
 pnos.extend(nnos)
 print(pnos)  # Output: [1, 2, 3, 4, 5, -6, -7, -8, -9, -10]
 
+# counting the frequency using a built in function
 fruits.count("kiwi")
 print(fruits.count("kiwi"))  # Output: 1
 age = [20, 21, 22, 22, 24, 25]
 print(age.count(22))  # Output: 2
+#index
+age = [20, 21, 22, 22, 24, 25]
 age.index(24)
 print(age.index(24))  # Output: 4
+<<<<<<< HEAD
+=======
+
+# reverse
+>>>>>>> 659863a0e4005d7d069ef449a48e462cf1c4065c
 fruits = ["kiwi", "mango", "guava", "pear", "grape", "banana"]
 fruits.reverse()
 print(fruits)  # Output: ['banana', 'grape', 'pear', 'guava', 'mango', 'kiwi']
+
+# sort
 fruits.sort()
 print(fruits)  # Output: ['banana', 'grape', 'guava', 'kiwi', 'mango', 'pear']
