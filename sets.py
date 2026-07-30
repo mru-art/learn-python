@@ -19,15 +19,11 @@ fruits = {"lime", "cherry", "banana", "pear"}
 veg = {"carrot", "broccoli", "spinach", "cabbage"}
 fruits.update(veg)
 print(fruits)
-print(
-    fruits | veg
-)  # Output: {'lime', 'cherry', 'banana', 'pear', 'carrot', 'broccoli', 'spinach', 'cabbage'}
+print(fruits | veg)  # Output: {'lime', 'cherry', 'banana', 'pear', 'carrot', 'broccoli', 'spinach', 'cabbage'}
 
 # removing an item from a set
 fruits.remove("lime")
-print(
-    fruits
-)  # Output: {'cherry', 'banana', 'pear', 'carrot', 'broccoli', 'spinach', 'cabbage'}
+print(fruits)  # Output: {'cherry', 'banana', 'pear', 'carrot', 'broccoli', 'spinach', 'cabbage'}
 
 # pop. it pops a random item from the set, since sets are unordered, you will not know which item that gets removed.
 fruits.pop()
